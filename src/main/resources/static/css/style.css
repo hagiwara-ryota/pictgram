@@ -72,7 +72,8 @@ nav.navbar {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646; }
+  background-color: #464646;
+  overflow: auto; }
   .users-new-wrapper main {
     padding-top: 80px; }
 
