@@ -36,6 +36,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.pictgram.entity.Comment;
 import com.example.pictgram.entity.Favorite;
+import com.example.pictgram.entity.Topic;
 import com.example.pictgram.entity.UserInf;
 import com.example.pictgram.form.CommentForm;
 import com.example.pictgram.form.FavoriteForm;
