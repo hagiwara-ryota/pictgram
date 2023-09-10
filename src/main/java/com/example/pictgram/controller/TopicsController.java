@@ -35,7 +35,6 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.pictgram.entity.Favorite;
-import com.example.pictgram.entity.Topic;
 import com.example.pictgram.entity.UserInf;
 import com.example.pictgram.form.FavoriteForm;
 import com.example.pictgram.form.TopicForm;
