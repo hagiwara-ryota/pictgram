@@ -14,3 +14,5 @@ datasource:
   password: ${psql.password}
 image:
   local: true
+onesignal:
+  id: ${onesignal.id}
