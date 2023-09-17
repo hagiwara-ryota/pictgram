@@ -73,7 +73,6 @@ public class TopicsController {
 	public String index(Principal principal, Model model) throws IOException {
 		Authentication authentication = (Authentication) principal;
 		UserInf user = (UserInf) authentication.getPrincipal();
-
 		Iterable<Topic> topics = repository.findAllByOrderByUpdatedAtDesc();
 		List<TopicForm> list = new ArrayList<>();
 		for (Topic entity : topics) {
@@ -81,7 +80,6 @@ public class TopicsController {
 			list.add(form);
 		}
 		model.addAttribute("list", list);
-
 		return "topics/index";
 	}
 
@@ -95,7 +93,7 @@ public class TopicsController {
 
 		boolean isImageLocal = false;
 		if (imageLocal != null) {
-			isImageLocal = new Boolean(imageLocal);
+			isImageLocal = Boolean.parseBoolean(imageLocal);
 		}
 		TopicForm form = modelMapper.map(entity, TopicForm.class);
 
@@ -177,7 +175,7 @@ public class TopicsController {
 
 		boolean isImageLocal = false;
 		if (imageLocal != null) {
-			isImageLocal = new Boolean(imageLocal);
+			isImageLocal = Boolean.parseBoolean(imageLocal);
 		}
 
 		Topic entity = new Topic();

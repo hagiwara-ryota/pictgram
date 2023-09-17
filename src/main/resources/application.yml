@@ -12,10 +12,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/pictgram
     username: ${psql.user}
     password: ${psql.password}
-  image:
-    local: true
-  onesignal:
-    id: ${onesignal.id}
   mail:
     default-encoding: UTF-8
     protocol: smtp
@@ -31,3 +27,7 @@ spring:
             enable: true
   thymeleaf:
     check-template-location: false  
+image:
+  local: true
+onesignal:
+  id: ${onesignal.id}
