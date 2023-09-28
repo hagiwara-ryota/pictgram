@@ -142,7 +142,7 @@ html {
   min-height: 100%; }
 
 body {
-  margin-bottom: 180px; }
+  margin-bottom: 0; }
 
 .footer {
   position: absolute;
